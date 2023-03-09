@@ -81,11 +81,11 @@ getAllCountries();
 // STEP 5 with ext
 // console.log("HI!");
 
-// function getCountryByName(countryName) {
-//   fetch(`https://restcountries.com/v3.1/name/${countryName}`)
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-//     .catch(error => console.error('Error:', error));
-// }
+function getCountryByName(countryName) {
+  fetch(`https://restcountries.com/v3.1/name/${countryName}`)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(() => console.log('error'));
+}
 
-// getCountryByName("Tunisia");
+getCountryByName("Tunisia");
